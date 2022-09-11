@@ -42,9 +42,7 @@ export const searchSlice = createSlice({
         state.places = [];
         state.coordinates = [];
       })
-      .addCase(
-        getLocation.fulfilled,
-        (state, { payload: { lat, lon, businesses } }) => {
+      .addCase(getLocation.fulfilled, (state, { payload: { lat, lon, businesses } }) => {
           state.loading = false;
           state.error = false;
           state.coordinates = [lat, lon];

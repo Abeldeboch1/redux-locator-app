@@ -26,9 +26,9 @@ const HotelDetailWrapper = styled.header`
     margin: 1px;
   }
   img {
-    width: 200px;
+    width: 50%;
     margin-top: 10px;
-    hight: 50px;
+    height: 50%;
     text-align: center;
     border-radius: 4px;
   }
